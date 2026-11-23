@@ -7,7 +7,7 @@
   title und message sind optional. Ohne videoId zeigt das Türchen einen Hinweis.
 */
 const adventVideos = [
-  { day: 1, title: "Türchen 1", videoId: "https://youtu.be/8w_wcJHRzck?si=1B9QR2CeUQL9Cqye", message: "Weihnachten gehts ja bekanntlich um Jesus, also kleiner Fun-Fact über die Hood, des guten Mannes." },
+  { day: 1, title: "Türchen 1", videoId: "1B9QR2CeUQL9Cqye", message: "Weihnachten gehts ja bekanntlich um Jesus, also kleiner Fun-Fact über die Hood, des guten Mannes." },
   { day: 2, title: "Türchen 2", videoId: "", message: "" },
   { day: 3, title: "Türchen 3", videoId: "", message: "" },
   { day: 4, title: "Türchen 4", videoId: "", message: "" },
