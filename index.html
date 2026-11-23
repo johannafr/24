@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Ein persönlicher Video-Adventskalender">
+  <title>Dein Adventskalender</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <p class="eyebrow">24 kleine Überraschungen</p>
+      <h1>Dein Adventskalender</h1>
+      <p class="subtitle" id="intro-text">Jeden Tag wartet ein neues Türchen auf dich.</p>
+    </header>
+
+    <section class="calendar" aria-label="Adventskalender-Türchen">
+      <div class="tiles" id="tiles"></div>
+    </section>
+
+    <section class="video-area" id="video-area" aria-live="polite" hidden>
+      <div class="video-heading">
+        <p class="eyebrow" id="video-day"></p>
+        <h2 id="video-title"></h2>
+        <p id="video-message" class="video-message"></p>
+      </div>
+      <div class="video-frame" id="video-frame"></div>
+    </section>
+
+    <footer>Mit Liebe gestaltet</footer>
+  </main>
+  <script src="videos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
