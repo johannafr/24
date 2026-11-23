@@ -7,7 +7,6 @@ const videoFrame = document.getElementById("video-frame");
 
 function getUnlockedDay() {
   const now = new Date();
-  if (now.getMonth() !== 11) return now.getMonth() > 11 ? 24 : 0;
   return Math.min(24, now.getDate());
 }
 
