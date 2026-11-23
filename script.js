@@ -54,9 +54,15 @@ function renderCalendar() {
     number.textContent = String(day).padStart(2, "0");
 
     const heart = document.createElement("span");
-    heart.className = "day-heart";
-    heart.setAttribute("aria-hidden", "true");
-    heart.textContent = "♥";
+  heart.className = "day-heart";
+heart.setAttribute("aria-hidden", "true");
+
+heart.innerHTML = `
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 21s-9-5.7-9-12a5 5 0 0 1 9-3.1A5 5 0 0 1 21 9c0 6.3-9 12-9 12z"
+      fill="currentColor"/>
+  </svg>
+`;
 
     button.append(number, heart);
     if (!button.disabled) button.addEventListener("click", () => showDay(day));
