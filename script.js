@@ -10,33 +10,55 @@ function getUnlockedDay() {
   return Math.min(24, now.getDate());
 }
 
+
 function showDay(day) {
   const item = adventVideos.find(video => video.day === day) || {};
+
   videoArea.hidden = false;
   videoDay.textContent = `Türchen ${day}`;
   videoTitle.textContent = item.title || `Türchen ${day}`;
   videoMessage.textContent = item.message || "";
   videoFrame.replaceChildren();
 
-  if (item.videoId && /^[a-zA-Z0-9_-]{6,}$/.test(item.videoId)) {
+  if (item.type === "link" && item.url) {
+    const linkButton = document.createElement("a");
+    linkButton.className = "advent-link-button";
+    linkButton.href = item.url;
+    linkButton.target = "_blank";
+    linkButton.rel = "noopener noreferrer";
+    linkButton.textContent = item.buttonText || "Hier öffnen";
+
+    videoFrame.appendChild(linkButton);
+
+  } else if (
+    item.videoId &&
+    /^[a-zA-Z0-9_-]{6,}$/.test(item.videoId)
+  ) {
     const iframe = document.createElement("iframe");
+
     iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(item.videoId)}`;
     iframe.title = item.title || `Video zu Türchen ${day}`;
     iframe.loading = "lazy";
     iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
     iframe.allowFullscreen = true;
-    referrerPolicy = "strict-origin-when-cross-origin";
     iframe.referrerPolicy = "strict-origin-when-cross-origin";
+
     videoFrame.appendChild(iframe);
+
   } else {
     const placeholder = document.createElement("div");
     placeholder.className = "video-placeholder";
-    placeholder.textContent = "Für dieses Türchen wurde noch kein Video hinterlegt.";
+    placeholder.textContent = "Für dieses Türchen wurde noch kein Inhalt hinterlegt.";
+
     videoFrame.appendChild(placeholder);
   }
 
-  videoArea.scrollIntoView({ behavior: "smooth", block: "start" });
+  videoArea.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
 }
+
 
 function renderCalendar() {
   const unlockedDay = getUnlockedDay();
