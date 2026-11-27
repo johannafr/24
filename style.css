@@ -197,3 +197,48 @@ footer {
   .day-tile { border-radius: 4px; }
   .day-heart { top: 6px; right: 7px; }
 }
+
+
+.advent-link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(100%, 360px);
+  min-height: 64px;
+  margin: auto;
+  padding: 18px 28px;
+
+  background: #1b1b1e;
+  border: 1px solid #A47DAB;
+  border-radius: 5px;
+
+  color: #A47DAB;
+  font-family: "Bitcount Single", monospace;
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+
+  transition: background .2s ease,
+              color .2s ease,
+              transform .2s ease;
+}
+
+.advent-link-button:hover {
+  background: #A47DAB;
+  color: #101010;
+  transform: translateY(-2px);
+}
+
+.advent-link-button:focus-visible {
+  outline: 2px solid #A47DAB;
+  outline-offset: 4px;
+}
+
+@media (max-width: 480px) {
+  .advent-link-button {
+    min-height: 58px;
+    font-size: 1rem;
+  }
+}
+
