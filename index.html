@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#111111">
-  <meta name="description" content="Ein persönlicher Video-Adventskalender">
+  <meta name="description" content="Ein persönlicher Adventskalender">
   <title>Dein Adventskalender</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,21 +19,59 @@
       <p class="subtitle" id="intro-text">Jeden Tag wartet ein neues Türchen auf dich.</p>
     </header>
 
-    <section class="calendar" aria-label="Adventskalender-Türchen">
-      <div class="tiles" id="tiles"></div>
+    <section class="login-panel" id="login-panel" aria-labelledby="login-title">
+      <h2 id="login-title">Persönlicher Zugang</h2>
+      <p class="login-copy">Bitte gib deinen Zugangscode ein, um den Adventskalender zu öffnen.</p>
+      <form id="login-form">
+        <label class="sr-only" for="access-code">Zugangscode</label>
+        <input id="access-code" name="code" type="password" autocomplete="current-password"
+          placeholder="Zugangscode" required>
+        <button class="primary-button" type="submit" id="login-submit">Öffnen</button>
+      </form>
+      <p class="status-message" id="login-status" role="status" aria-live="polite"></p>
     </section>
 
-    <section class="video-area" id="video-area" aria-live="polite" hidden>
-      <div class="video-heading">
-        <p class="eyebrow" id="video-day"></p>
-        <h2 id="video-title"></h2>
-        <p id="video-message" class="video-message"></p>
+    <div id="calendar-app" hidden>
+      <section class="calendar" id="calendar-section" aria-label="Adventskalender-Türchen">
+        <div class="tiles" id="tiles"></div>
+      </section>
+
+      <section class="content-area" id="content-area" aria-live="polite" hidden>
+        <div class="content-heading">
+          <p class="eyebrow" id="content-day"></p>
+          <h2 id="content-title"></h2>
+          <p id="content-message" class="content-message"></p>
+        </div>
+        <div class="content-body" id="content-body"></div>
+
+        <section class="rating-panel" id="rating-panel" aria-label="Türchen bewerten">
+          <h3>Wie hat dir diese Überraschung gefallen?</h3>
+          <p class="rating-help">Du kannst deine Bewertung jederzeit ändern.</p>
+          <div class="rating-hearts" id="rating-hearts" aria-label="Bewertung von 0 bis 10"></div>
+          <p class="rating-status" id="rating-status" role="status" aria-live="polite"></p>
+        </section>
+      </section>
+
+      <section class="stats-area" id="stats-area" hidden>
+        <div class="stats-heading">
+          <p class="eyebrow">Rückblick</p>
+          <h2>Deine Adventsstatistik</h2>
+          <p class="stats-intro" id="stats-intro">Ab dem 25. Dezember verfügbar.</p>
+        </div>
+        <button class="primary-button stats-button" id="load-stats" type="button">Statistik anzeigen</button>
+        <div id="stats-content" hidden></div>
+        <p class="status-message" id="stats-status" role="status" aria-live="polite"></p>
+      </section>
+
+      <div class="account-actions">
+        <button class="text-button" id="logout-button" type="button">Abmelden</button>
       </div>
-      <div class="video-frame" id="video-frame"></div>
-    </section>
+    </div>
 
     <footer>ok, boomer</footer>
   </main>
+
+  <script src="supabase-config.js"></script>
   <script src="videos.js"></script>
   <script src="script.js"></script>
 </body>
