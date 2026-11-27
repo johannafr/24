@@ -21,7 +21,7 @@ const adventVideos = [
   buttonText: "Hier öffnen",
   url: "https://example.com",
   message: "Ich habe etwas für dich."
-}
+},
   { day: 3, title: "Türchen 3", videoId: "", message: "" },
   { day: 4, title: "Türchen 4", videoId: "", message: "" },
   { day: 5, title: "Türchen 5", videoId: "", message: "" },
