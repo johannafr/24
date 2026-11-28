@@ -40,8 +40,8 @@ const adventVideos = [
     title: "Die Zahl 5 schreit nach einem meiner liebste Mathe-Witze. (Es hat leider noch nie jemand ernsthaft drüber gelacht, aber ich probiers trotzdem)",
     fact: "Löse mit Bedacht: 230 - 220 * 0.5 = ? - Du wirst es nicht glauben, aber die Antwort ist 5!"
   },
-  { day: 6, type: "video", title: "Türchen 6", videoId: "", message: "" },
-  { day: 7, type: "video", title: "Türchen 7", videoId: "", message: "" },
+  { day: 6, type: "video", title: "conspiracy time", videoId: "d0Fbcc8uWEc", message: "Der heilige Nikolaus von Myra lebte bis 286 - also vor 1740 Jahren. Aber waren es wirklich so viele? Zeit für eine meiner liebsten Verschwörungstheorien." },
+  { day: 7, type: "video", title: "whiskey tango foxtrott", videoId: "", message: "Heute im Jahr 1944 würde die ICAO gegründet" },
   { day: 8, type: "video", title: "Türchen 8", videoId: "", message: "" },
    {
     day: 9,
