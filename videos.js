@@ -60,7 +60,7 @@ const adventVideos = [
   { day: 16, type: "video", title: "Türchen 16", videoId: "", message: "" },
   { day: 17, type: "video", title: "Türchen 17", videoId: "", message: "" },
   { day: 18, type: "video", title: "Türchen 18", videoId: "", message: "" },
-  { day: 19, type: "video", title: "Türchen 19", videoId: "", message: "" },
+  { day: 19, type: "video", title: "urlaubsreif", videoId: "0fWFYp0wB6w", message: "Als Optimierungsenthusiast stellt man sich natürlich die Frage, gibt es ein mathematisch perfektes Urlaubsziel?" },
   { day: 20, type: "video", title: "Türchen 20", videoId: "", message: "" },
   { day: 21, type: "video", title: "Türchen 21", videoId: "", message: "" },
   { day: 22, type: "video", title: "Türchen 22", videoId: "", message: "" },
