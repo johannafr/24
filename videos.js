@@ -33,8 +33,13 @@ const adventVideos = [
     title: "Wusstest du dass..",
     fact: "An genau diesem Tag, im Jahr 1992 wurde die allererste SMS mit dem Text 'Merry Christmas' verschickt. Un im Jahr 1967 wurde die erste Herztransplantation an einem Menschen durchgeführt."
   },
-  { day: 4, type: "video", title: "asdfghjkl", videoId: "mFkC3F0lmjA", message: "Du fragst sich sicherlich jedesmal beim Verfassen großartien E-Mail, wer sich eigentlich diese QWERTZ-Tastatur überlegt hat und warum. Falls du es noch nicht recherchiert hast, hat es glücklicherweise schon jemand für dich gemacht." },
-  { day: 5, type: "video", title: "Türchen 5", videoId: "", message: "" },
+  { day: 4, type: "video", title: "asdfghjkl", videoId: "mFkC3F0lmjA", message: "Du fragst sich sicherlich jedes Mal beim Verfassen einer großartigen E-Mail, wer sich eigentlich diese QWERTZ-Tastatur überlegt hat und warum. Falls du es noch nicht recherchiert hast, hat es glücklicherweise schon jemand für dich gemacht." },
+ {
+    day: 5,
+    type: "fact",
+    title: "Die Zahl 5 schreit nach einem meiner liebste Mathe-Witze. (Es hat leider noch nie jemand ernsthaft drüber gelacht, aber ich probiers trotzdem)",
+    fact: "Löse mit Bedacht: 230 - 220 * 0.5 = ? - Du wirst es nicht glauben, aber die Antwort ist 5!"
+  },
   { day: 6, type: "video", title: "Türchen 6", videoId: "", message: "" },
   { day: 7, type: "video", title: "Türchen 7", videoId: "", message: "" },
   { day: 8, type: "video", title: "Türchen 8", videoId: "", message: "" },
