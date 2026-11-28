@@ -31,7 +31,7 @@ const adventVideos = [
   {
     day: 3,
     type: "fact",
-    title: "Fun Fact",
+    title: "Wusstest du dass..",
     fact: "An genau diesem Tag, im Jahr 1992 wurde die allererste SMS mit dem Text 'Merry Christmas' verschickt. Un im Jahr 1967 wurde die erste Herztransplantation an einem Menschen durchgeführt."
   },
   { day: 4, type: "video", title: "Türchen 4", videoId: "", message: "" },
