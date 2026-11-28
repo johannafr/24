@@ -22,11 +22,10 @@ const adventVideos = [
   },
   {
     day: 2,
-    type: "link",
-    title: "Eine kleine Überraschung",
-    buttonText: "Hier öffnen",
-    url: "https://example.com",
-    message: "Ich habe etwas für dich."
+    type: "video",
+    title: "(ugly christmas) sweater weather",
+    videoId: "EImnSsCadK8",
+    message: "Langsam kann man den ugly christmas sweater rausholen. Oder, wenn man cool ist (und drüber steht was Gen-Z von einem denkt), kann man auch in einem rabbithole über Strick- und Häkelmaschinen verschwinden. Sehr zu empfehlen für einen noch deeperen deep-dive ist auch die Netflix-Explained Doku über athleisurewear."
   },
   {
     day: 3,
@@ -34,12 +33,19 @@ const adventVideos = [
     title: "Wusstest du dass..",
     fact: "An genau diesem Tag, im Jahr 1992 wurde die allererste SMS mit dem Text 'Merry Christmas' verschickt. Un im Jahr 1967 wurde die erste Herztransplantation an einem Menschen durchgeführt."
   },
-  { day: 4, type: "video", title: "Türchen 4", videoId: "", message: "" },
+  { day: 4, type: "video", title: "asdfghjkl", videoId: "mFkC3F0lmjA", message: "Du fragst sich sicherlich jedesmal beim Verfassen großartien E-Mail, wer sich eigentlich diese QWERTZ-Tastatur überlegt hat und warum. Falls du es noch nicht recherchiert hast, hat es glücklicherweise schon jemand für dich gemacht." },
   { day: 5, type: "video", title: "Türchen 5", videoId: "", message: "" },
   { day: 6, type: "video", title: "Türchen 6", videoId: "", message: "" },
   { day: 7, type: "video", title: "Türchen 7", videoId: "", message: "" },
   { day: 8, type: "video", title: "Türchen 8", videoId: "", message: "" },
-  { day: 9, type: "video", title: "Türchen 9", videoId: "", message: "" },
+   {
+    day: 9,
+    type: "link",
+    title: "(ugly christmas) sweater weather",
+    buttonText: "Langsam kann man den ugly christmas sweater rausholen. Oder, wenn man cool ist (und drüber steht was Gen-Z von einem denkt), kann man auch in einem rabbithole über Strick- und Häkelmaschinen verschwinden. Sehr zu empfehlen für einen noch deeperen deep-dive ist auch die Netflix-Explained Doku über athleisurewear.",
+    url: "https://example.com",
+    message: "Ich habe etwas für dich."
+  },
   { day: 10, type: "video", title: "Türchen 10", videoId: "", message: "" },
   { day: 11, type: "video", title: "Türchen 11", videoId: "", message: "" },
   { day: 12, type: "video", title: "Türchen 12", videoId: "", message: "" },
