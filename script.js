@@ -56,9 +56,16 @@ function getUnlockedDay() {
 }
 
 function statsAreAvailable() {
+
+  // === ORIGINALFUNKTION – NACH DEM TEST WIEDER AKTIVIEREN ===
+  /*
   const date = getViennaDate();
   return date.year > ADVENT_YEAR ||
     (date.year === ADVENT_YEAR && date.month === 12 && date.day >= 25);
+  */
+
+  // === TEMPORÄRER TESTMODUS ===
+  return true;
 }
 
 function setStatus(element, message, type = "") {
