@@ -16,9 +16,9 @@ const adventVideos = [
   {
     day: 1,
     type: "video",
-    title: "Eine Überraschung",
-    videoId: "DEINE_VIDEO_ID",
-    message: "Viel Freude damit!"
+    title: "Jesus, es ist schon Dezember",
+    videoId: "8w_wcJHRzck",
+    message: "Im Advent geht es ja bekanntlich um Jesus. Hier ein kleiner Fun Fact (ich hab den Verdacht den kennst du) über die Hood des guten Mannes :)"
   },
   {
     day: 2,
