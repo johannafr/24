@@ -25,7 +25,7 @@ const adventVideos = [
     type: "video",
     title: "(ugly christmas) sweater weather",
     videoId: "EImnSsCadK8",
-    message: "Langsam kann man den ugly christmas sweater rausholen. Oder, wenn man cool ist (und drüber steht was Gen-Z von einem denkt), kann man auch in einem rabbithole über Strick- und Häkelmaschinen verschwinden. Sehr zu empfehlen für einen noch deeperen deep-dive ist auch die Netflix-Explained Doku über athleisurewear."
+    message: "Langsam kann man den ugly christmas sweater rausholen. Oder, wenn man cool ist (und drüber steht was Gen-Z von einen denkt), kann man auch in einem rabbithole über Strick- und Häkelmaschinen verschwinden. Sehr zu empfehlen für einen noch deeperen deep-dive ist auch die Netflix-Explained Doku über athleisurewear."
   },
   {
     day: 3,
