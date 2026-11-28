@@ -53,7 +53,7 @@ const adventVideos = [
   },
   { day: 10, type: "video", title: "Türchen 10", videoId: "", message: "" },
   { day: 11, type: "video", title: "Türchen 11", videoId: "", message: "" },
-  { day: 12, type: "video", title: "Türchen 12", videoId: "", message: "" },
+  { day: 12, type: "video", title: "Willkommen im Club, alter Mann", videoId: "KtT_cgMzHx8", message: "Jetzt hast du sie gekackt, die magische Zahl und bist offiziell alt. Siebträger und Airfryer sind schon im Gepäck - kommt nun der Sauerteig-Staerter, der Hyrox oder doch das Rennrad - choose wisely würde ich sagen. Was auf keinen Fall fehlen darf, ist ein wenig Geburtstagsmathe :)" },
   { day: 13, type: "video", title: "Türchen 13", videoId: "", message: "" },
   { day: 14, type: "video", title: "Türchen 14", videoId: "", message: "" },
   { day: 15, type: "video", title: "Türchen 15", videoId: "", message: "" },
